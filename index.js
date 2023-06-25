@@ -2,7 +2,17 @@ var robot = require("robotjs");
 
 function main() {
   console.log("starting");
-  sleep(2000);
+  sleep(4000);
+  robot.moveMouseSmooth(342, 329);
+  robot.mouseClick();
+  sleep(8000);
+  robot.moveMouseSmooth(342, 329);
+  robot.mouseClick();
+  sleep(8000);
+  robot.moveMouseSmooth(342, 329);
+  robot.mouseClick();
+  sleep(8000);
+
   console.log("done");
 }
 
