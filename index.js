@@ -2,18 +2,15 @@ var robot = require("robotjs");
 
 function main() {
   console.log("starting");
-
   sleep(4000);
-  robot.moveMouseSmooth(342, 329);
-  //CMD + shift + 4 to get coordinates
-  robot.mouseClick();
-  sleep(8000);
-  robot.moveMouseSmooth(342, 329);
-  robot.mouseClick();
-  sleep(8000);
-  robot.moveMouseSmooth(342, 329);
-  robot.mouseClick();
-  sleep(8000);
+  //on Mac CMD + shift + 4 to get coordinates
+  let i = 0;
+  while (i < 5) {
+    robot.moveMouseSmooth(369, 337);
+    robot.mouseClick();
+    sleep(8000);
+    i++;
+  }
 
   console.log("done");
 }
